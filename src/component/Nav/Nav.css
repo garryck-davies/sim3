@@ -1,0 +1,9 @@
+.nav-container {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    align-items: baseline;
+    background: skyblue;
+    width: 100px;
+    height: 100vh;
+}
