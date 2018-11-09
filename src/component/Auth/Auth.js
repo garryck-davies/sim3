@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import axios from 'axios';
 import './Auth.css';
-import {connect} from 'react-redux';
-class Auth extends Component {
+export default class Auth extends Component {
 
     state = {
         username: '',
@@ -71,10 +70,3 @@ class Auth extends Component {
     );
   }
 }
-function mapStateToProps(state) {
-    console.log('redux store state: ', state)
-    return state
-}
-
-
-export default connect(mapStateToProps, {})(Auth)

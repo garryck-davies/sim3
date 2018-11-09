@@ -23,6 +23,7 @@ app.use(session({
 }))
 
 //endpoints
+app.post('/api/user-data', controller.userData)
 app.post('/auth/register', controller.register)
 app.post('/auth/login', controller.login)
 //listen on port
